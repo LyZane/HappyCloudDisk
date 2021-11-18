@@ -1,7 +1,7 @@
 {
   "name": "happy-cloud-disk",
   "version": "0.0.1",
-  "author": "Zane",
+  "author": "Zane lyzane.it@gmail.com",
   "description": "使用云计算对象存储（OSS、Kodo）服务作为存储环境的网盘客户端",
   "license": "Apache 2.0",
   "main": "./dist/electron/main.js",
@@ -20,7 +20,7 @@
   },
   "build": {
     "productName": "happy-cloud-disk",
-    "appId": "com.lyzane.happy-cloud-disk",
+    "appId": "com.example.yourapp",
     "directories": {
       "output": "build"
     },
