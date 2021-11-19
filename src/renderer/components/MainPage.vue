@@ -26,7 +26,11 @@
         </a-sub-menu>
         <a-sub-menu key="sub3">
           <span slot="title"><a-icon type="notification" />subnav 3</span>
-          <a-menu-item key="9"> option9 </a-menu-item>
+          <a-menu-item key="9">
+            <router-link :to="{ path: '/qiniu-setting' }">
+              qiniu-setting
+            </router-link>
+          </a-menu-item>
           <a-menu-item key="10"> option10 </a-menu-item>
           <a-menu-item key="11"> option11 </a-menu-item>
           <a-menu-item key="12"> option12 </a-menu-item>
@@ -34,24 +38,14 @@
       </a-menu>
     </a-layout-sider>
     <a-layout :style="{ marginLeft: '200px' }">
-      <a-layout-header :style="{ background: '#fff', padding: 0 }" />
-      <a-layout-content :style="{ margin: '24px 16px 0', overflow: 'initial' }">
+      <a-layout-header
+        :style="{ background: '#fff', padding: 0, height: '70px' }"
+      />
+      <a-layout-content :style="{ margin: '24px 16px 0', overflow: 'initial','min-height':'700px' }">
         <div
-          :style="{ padding: '24px', background: '#fff', textAlign: 'center' }"
+          :style="{ padding: '24px', background: '#fff'}"
         >
-          ...
-          <br />
-          Really
-          <br />...<br />...<br />...<br />
-          long
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />...
-          <br />...<br />...<br />...<br />...<br />...<br />
-          content
+          <router-view></router-view>
         </div>
       </a-layout-content>
       <a-layout-footer :style="{ textAlign: 'center' }">
@@ -74,7 +68,7 @@
   background-color: white;
   .logo {
     height: 50px;
-    
+
     margin: 10px;
   }
 }

@@ -7,8 +7,15 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/MainLayout').default
+      name: 'main-page',
+      component: require('@/components/MainPage').default,
+      children: [
+        {
+          path: '/qiniu-setting',
+          name: 'qiniu-setting',
+          component: require('@/components/QiniuSetting').default
+        }
+      ]
     },
     {
       path: '*',
