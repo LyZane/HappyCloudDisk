@@ -10,11 +10,10 @@
 
 ## 使用到的技术
 
-* electron
-* vue
-* electron-vue
-* ant
-* ant-design-vue
+* electron：https://www.electronjs.org/zh/docs/latest/
+* vue：https://cn.vuejs.org/v2/guide/index.html
+* electron-vue：https://simulatedgreg.gitbooks.io/electron-vue/content/cn/
+* ant-design-vue：https://antdv.com/docs/vue/introduce-cn/
 #### Build Setup
 
 ``` bash
